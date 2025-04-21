@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>歷年來台觀光客統計資訊網</title>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&display=swap" rel="stylesheet">
+	<style>
+		body {
+			margin: 0;
+			font-family: 'Noto Sans TC', sans-serif;
+			background: linear-gradient(to bottom right, #e8f5e9, #e3f2fd);
+			color: #2c3e50;
+		}
+		nav {
+			background: #ffffffee;
+			backdrop-filter: blur(5px);
+			box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+			padding: 10px 20px;
+			position: sticky;
+			top: 0;
+			z-index: 100;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		nav .nav-title {
+			font-weight: bold;
+			font-size: 1.2em;
+			color: #2e86de;
+		}
+		nav a {
+			margin: 0 10px;
+			color: #2c3e50;
+			text-decoration: none;
+			font-weight: 500;
+			transition: color 0.3s;
+		}
+		nav a:hover {
+			color: #00b894;
+		}
+		h1 {
+			text-align: center;
+			padding: 40px 20px 10px;
+			font-size: 2.8em;
+		}
+		.headline-main {
+			font-weight: 900;
+			letter-spacing: 3px;
+			background: linear-gradient(to right, #2e86de, #00b894);
+			-webkit-background-clip: text;
+			-webkit-text-fill-color: transparent;
+			text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+			display: block;
+		}
+		.headline-sub {
+			display: block;
+			font-size: 0.6em;
+			color: #555;
+			margin-top: 10px;
+			font-weight: 400;
+		}
+		.content {
+			max-width: 960px;
+			margin: 30px auto;
+			background: #fff;
+			padding: 40px;
+			border-radius: 15px;
+			box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+			animation: fadeIn 1s ease-in-out;
+		}
+		.section-title {
+			font-size: 1.5em;
+			color: #c0392b;
+			margin-top: 40px;
+			margin-bottom: 10px;
+			border-left: 6px solid #c0392b;
+			padding-left: 10px;
+			font-weight: bold;
+		}
+		iframe {
+			display: block;
+			margin: 20px auto;
+			border: 2px solid #ccc;
+			border-radius: 10px;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+		}
+		@keyframes fadeIn {
+			from { opacity: 0; transform: translateY(30px); }
+			to { opacity: 1; transform: translateY(0); }
+		}
+		#backToTop {
+			position: fixed;
+			bottom: 30px;
+			right: 30px;
+			width: 50px;
+			height: 50px;
+			background-color: #2e86de;
+			color: white;
+			border: none;
+			border-radius: 50%;
+			font-size: 20px;
+			cursor: pointer;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			z-index: 100;
+			transition: background 0.3s;
+		}
+		#backToTop:hover {
+			background-color: #0984e3;
+		}
+		.lang-toggle {
+			border: 1px solid #ccc;
+			background-color: #f5f5f5;
+			border-radius: 5px;
+			padding: 5px 10px;
+			font-size: 0.9em;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+
+	<!-- 導覽列 -->
+	<nav>
+		<div class="nav-title">觀光統計</div>
+		<div>
+			<a href="#sec1">分析報導</a>
+			<a href="#sec2">整體趨勢</a>
+			<a href="#sec3">最新數據</a>
+			<a href="#sec4">未來展望</a>
+			<button class="lang-toggle">🌐 EN</button>
+		</div>
+	</nav>
+
+	<!-- 主標題 -->
+	<h1>
+		<span class="headline-main">歷年來台觀光客統計資訊網</span>
+		<span class="headline-sub">（按居住地統計）</span>
+	</h1>
+
+	<!-- iframe 圖表 -->
+	<iframe src="force.html" width="800" height="500"></iframe>
+	<iframe src="race.html" width="800" height="500"></iframe>
+
+	<!-- 語言區塊 -->
+	<div class="content lang-section zh">
+		<p class="section-title" id="sec1">📈 歷年來臺旅客分析報導：東亞回歸主力，東南亞崛起勢不可擋</p>
+		<p>隨著台灣觀光產業的持續發展，來臺旅客的結構與來源地也呈現明顯轉變。根據交通部觀光署統計，自 1956 年起的「按居住地統計」資料顯示，近七十年來，台灣觀光市場經歷了數個顯著階段。</p>
+
+		<p class="section-title" id="sec2">🌏 一、整體趨勢：日韓穩居主流，中港澳起伏大陸化</p>
+		<p>從歷年總旅客數統計來看，日本以超過 3,000 萬人次穩居第一，韓國緊隨其後，累積逾 1,000 萬人次，兩國長年貢獻台灣觀光主力。這樣的趨勢反映出地緣關係、航線密集程度、文化交流密切性等多重因素的綜合作用。<br><br>香港與中國大陸同樣為重要來源地，不過兩者波動幅度明顯不同：香港在 1990 年代起快速成長，在 2010 年代達到高峰，而中國大陸則是從 2008 年開放觀光後呈現指數級增長，一度成為台灣第一大客源國，直到近年政治與疫情影響急遽下滑。</p>
+
+		<p class="section-title" id="sec3">📊 二、最新數據（2024 年）：東南亞新星迅速崛起</p>
+		<p>2024 年來臺旅客中，前十大來源地分別為：<br>
+		日本（1,319,592 人）、韓國（1,003,086 人）、香港（1,198,217 人）、中國大陸（438,212 人）、菲律賓（467,157 人）、新加坡（447,841 人）、馬來西亞（429,727 人）、泰國（400,038 人）、越南（370,548 人）、印尼（224,477 人）<br><br>其中，值得注意的是 <b>東南亞六國（菲律賓、新加坡、馬來西亞、泰國、越南、印尼）</b>全數擠進前十，展現「新南向政策」下觀光市場的多元化成果。</p>
+
+		<p class="section-title" id="sec4">🧭 四、展望未來</p>
+		<p>在後疫情時代，台灣的觀光業正逐步走向多元市場與體驗導向轉型。如何在維持東北亞傳統市場同時，深化東南亞的連結、提升中長程旅客吸引力，將是未來數年觀光政策的重要挑戰與契機。</p>
+
+		<p class="section-title">📌 總結</p>
+		<p>台灣觀光市場正從單一來源集中逐步走向多元平衡的格局，日本與韓國依然是基本盤，而新南向市場的潛力不可忽視。面對瞬息萬變的國際局勢，持續優化觀光體驗與提升軟實力，才是吸引全球旅客的核心關鍵。</p>
+	</div>
+
+	<div class="content lang-section en" style="display: none;">
+		<p style="font-size: 1.1em;">⚠️ Language switching functionality not fully implemented yet. English translation coming soon.</p>
+	</div>
+
+	<!-- 回頂部按鈕 -->
+	<button id="backToTop" onclick="window.scrollTo({top: 0, behavior: 'smooth'});">↑</button>
+
+	<!-- 語言切換控制腳本 -->
+	<script>
+		const langToggleBtn = document.querySelector('.lang-toggle');
+		const zhSection = document.querySelector('.lang-section.zh');
+		const enSection = document.querySelector('.lang-section.en');
+		let currentLang = 'zh';
+
+		langToggleBtn.addEventListener('click', () => {
+			if (currentLang === 'zh') {
+				zhSection.style.display = 'none';
+				enSection.style.display = 'block';
+				currentLang = 'en';
+				langToggleBtn.textContent = '🌐 中文';
+			} else {
+				zhSection.style.display = 'block';
+				enSection.style.display = 'none';
+				currentLang = 'zh';
+				langToggleBtn.textContent = '🌐 EN';
+			}
+		});
+	</script>
+
+	<!-- 頁尾 -->
+	<footer style="background-color: #f2f2f2; text-align: center; padding: 20px; margin-top: 60px; font-size: 0.9em; color: #555;">
+		© 2025 鄭凱心<br>
+	</footer>
+</body>
+</html>
